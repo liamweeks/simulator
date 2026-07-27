@@ -77,6 +77,13 @@ class Recorder:
 
         return pi
 
+    def pi_vector_sum(self):
+        """
+        Sums the elements of the pi vector. The pi vector should ideally sum to 1
+        :return:
+        """
+        return sum(self.pi_vector())
+
     def plot_wait_ecdf(self, burn_in: float = 0.5, ax=None):
         """
         Plot the empirical CDF of queue wait time (Wq). The ECDF is the clearest
